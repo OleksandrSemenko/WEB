@@ -11,7 +11,7 @@ header .container-fluid/*Розмір елемента по ширині екр�
 {
     background-image: url('https://s1.1zoom.ru/b4866/178/USA_Houses_New_York_City_Night_Megapolis_From_526520_1920x1080.jpg');/*Картинка (колір) фону*/
     background-repeat: no-repeat;/*Без повторень*/
-    background-size: cover;/*Розмір фону*/
+    background-position: 50% 0px;/*Позиція фону*/
     height: 100vh;/*Висота елемента*/
     padding: 36px;/*Поля елемента*/
 }
@@ -37,4 +37,10 @@ header .container-fluid/*Розмір елемента по ширині екр�
 {
     color: #FFFFFF;
     margin-bottom: 5%;/*Відступ*/
+}
+
+section  .container-fluid
+{
+    padding: 15px;/*Поля елемента*/
+    background-position: 50% 0px;/*Позиція фону*/
 }
