@@ -7,6 +7,18 @@ h1, h2, h3, h4, h5, h6
     /*Обрамлення не потрібне*/
 }
 
+p
+{
+    text-align: justify;/*Вирівнювання по ширині*/
+    text-indent: 25px; /*Відступ */
+}
+
+P:first-letter {
+    font-family: "Times New Roman", serif; /*Шрифт*/
+    font-size: 200%; /* Розмір */
+    color: red; /*Колір*/
+}
+
 header .container-fluid/*Розмір елемента по ширині екрану(браузера)*/
 {
     background-image: url('https://s1.1zoom.ru/b4866/178/USA_Houses_New_York_City_Night_Megapolis_From_526520_1920x1080.jpg');/*Картинка (колір) фону*/
@@ -44,3 +56,19 @@ section  .container-fluid
     padding: 15px;/*Поля елемента*/
     background-position: 50% 0px;/*Позиція фону*/
 }
+
+a:link { /*Невідвідана */
+    color: #497DDD; 
+    border-bottom: 1px dashed; 
+  }
+  a:visited { /*Відвідана*/
+    color: #EF7D55;
+  }
+  a:hover { /*Нажата*/
+    color: #154088; 
+    border-bottom: .07em solid;
+  }
+  a:active { /*Ненажата*/
+    color: #497DDD; 
+    border-bottom: 1px dashed;
+  }
