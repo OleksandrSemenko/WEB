@@ -1,74 +1,139 @@
-h1, h2, h3, h4, h5, h6
+ h1, h2, h3, h4, h5, h6
+ {
+    font-family:  'Times New Roman', serif;/*Шрифт*/
+ }
+ 
+ h5, h6
 {
-    font-family: 'Times New Roman', serif;/*Шрифт*/
     font-size: 150%;/*Розмір*/
     color: black ;/*Колір*/
     margin: 0;/*Відступ(поля)*/
     /*Обрамлення не потрібне*/
 }
-
-p
+h4
 {
-    text-align: justify;/*Вирівнювання по ширині*/
-    text-indent: 25px; /*Відступ */
+    font-size: 200%;/*Розмір*/
+    color: rgb(2, 37, 7) ;/*Колір*/
+    margin: 15px;/*Відступ(поля)*/
 }
 
-P:first-letter {
-    font-family: "Times New Roman", serif; /*Шрифт*/
-    font-size: 200%; /* Розмір */
-    color: red; /*Колір*/
-}
-
-header .container-fluid/*Розмір елемента по ширині екрану(браузера)*/
+header .container-fluid
 {
-    background-image: url('https://s1.1zoom.ru/b4866/178/USA_Houses_New_York_City_Night_Megapolis_From_526520_1920x1080.jpg');/*Картинка (колір) фону*/
-    background-repeat: no-repeat;/*Без повторень*/
+    background-image: url('./images/city.jpg');/*Картинка (колір) фону*/
     background-position: 50% 0px;/*Позиція фону*/
     height: 100vh;/*Висота елемента*/
+    width: auto;/*Ширина елемента*/
     padding: 36px;/*Поля елемента*/
 }
-
-.jumbotron/*Елемент віділення тексту з сірим фоном*/
-{
-    background: none;/*Без сірого фону*/
-    text-align: center;/*Вирівнювання до центру*/
+.logo{
+    width: auto;
+    margin: auto;
+    margin-left: 3%; 
+}
+.menu{
+    width: auto;
+    margin: auto;
+    right:100pt;
 }
 
-.jumbotron h1,
-.jumbotron h2,
-.jumbotron h3,
-.jumbotron h4,
-.jumbotron h5,
-.jumbotron h6,
-.jumbotron small
+.header-text
 {
-    color: #FFFFFF;/*Колір текста в тегах*/
+text-align: center;
 }
 
-.jumbotron p
+ h2
 {
-    color: #FFFFFF;
-    margin-bottom: 5%;/*Відступ*/
+    font-size: 200%;/*Розмір*/
+    color:white;/*Колір текста в тегах*/
+}
+h1
+{
+    font-size: 400%;/*Розмір*/
+    color: rgb(228, 198, 178);/*Колір текста в тегах*/
+    margin: 30px;
+}
+h3
+{
+    font-size: 400%;/*Розмір*/
+    color:white;/*Колір текста в тегах*/
+    margin: 10px;
+}
+.headlines{
+    display: flex;
+    width: 100%;
+    height: 15vh;
+    margin: 0;
+}
+a{
+    font-family: 'Times New Roman';/*Шрифт*/
+    font-size: 125%;/*Розмір*/
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+}
+.container{
+    height: auto; 
+    background-color: rgb(243, 239, 243);
 }
 
-section  .container-fluid
-{
-    padding: 15px;/*Поля елемента*/
+.container-m{
+    height: 200vh; 
+    background-image: url('./images/back.jpg');
+    background-size: cover;
     background-position: 50% 0px;/*Позиція фону*/
+    padding: 36px;/*Поля елемента*/
+}
+.img-position
+{
+    text-align: center;
+    width : 40%;
+    height : 40%;
 }
 
-a:link { /*Невідвідана */
-    color: #497DDD; 
-    border-bottom: 1px dashed; 
-  }
-  a:visited { /*Відвідана*/
-    color: #EF7D55;
-  }
-  a:hover { /*Нажата*/
-    color: #154088; 
-    border-bottom: .07em solid;
-  }
-  a:active { /*Ненажата*/
-    color: #497DDD; 
-    border-bottom: 1px dashed;
-  }
+
+.img1, .img2,  .img4
+{
+   width: 45%;
+    height: 45%;
+    margin: 14px;
+}
+.img3{
+    width: 70%;
+    height: 70%;
+    margin: 14px;
+ 
+}
+.img5{
+    width: auto;
+    height: auto;
+    margin-bottom: 200px
+}
+.container-b{
+    height: auto; 
+    padding:50px;/*Поля елемента*/
+    background-color: rgb(238, 238, 238);
+}
+.button-s
+{   font-family:  'Times New Roman';/*Шрифт*/
+    font-size: 200%;/*Розмір*/
+    color: white ;/*Колір*/
+    width: 210px;
+    height: 100px;
+    background: rgb(250, 63, 63);
+    -moz-border-radius: 15px;
+    -webkit-border-radius: 15px;
+}
+.container-f{
+    width: 100%;
+    height: 25vh;
+    background: #302f2f;
+    font-family:  'Times New Roman';
+    color: #616060;
+    padding:10px;/*Поля елемента*/
+}
+
+.text-p
+{
+    text-align: center;
+    margin-top: 9%;
+}

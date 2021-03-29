@@ -3,76 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Donuts</title>
+    <title>Сайт розробки макетів</title>
     <link href="main.css" rel="stylesheet">
-    <nav>
-        <ul>
-            <li><a href="#home">Головна</a></li>
-            <li><a href="#direction">Напрямки</a></li>
-        </ul>
-      </nav-->
 </head>
 <body>
-    <header id="home">
-        <div class="container-fluid">
-                 <div class="jumbotron">
-                    <h1><small>Інфа</small><br>
-                    <strong>Назва</strong></h1>
-                    <p>Інформація про сайт</p>
-                </div> 
-        </div>
+    
+    <header>    
+        <section class="container-fluid">
+            <hgroup class="headlines">
+        <a href="#" class="logo">
+        <img src="./images/your_logo.png" alt="">
+    </a>
+    <nav class="menu">
+            <a href="" >Головна</a>
+            <a href="#direction">Напрямок</a>
+            <a href="#example">Приклади</a>
+            <a href="#contacts">Контакти</a>
+      </nav>
+    </hgroup>
+    <section class="header-text">
+               <h2><small>Креативність наше все</small></h2>
+               <h1><strong>OutLine</st></h1>
+               <h2>Можливість самому вибирати наповнення вашого макету</h2>
+        </section>
+    </section>
     </header>
-    <section id="direction">
-        <div class="container-fluid">
-        <ol>
-            <div data-wow-delay="100ms">
-            <li>
-                <h4> Можливість самому вибирати наповнення вашого макету</h4>
-                <p>Надсилайте нам фото та картинки які би ви хотіли бачити на макеті, використовуюючі таку <a href = "https://cs01.files.mya5.ru/-/VEN_FxGqLmR-Z9I_0CX-wg/sv/themes/central/0/341-0/341-0.png?1489158256">конструкцію</a></p>
-            </li>
-            </div>
-        <div data-wow-delay="300ms">
-            <li>
-            <h4> Від простого до арт макету</h4>
-            <p>Ми працюємо з макеами різного рівня, тому вони можуть сильно відрізнятися один від одного: <a href = "https://creativo.one/lessons/les2463.jpg">Макет1</a> <a href = "https://nortex.pro/ckeditor_assets/pictures/238/content_7.jpg">Макет2</a></p>
-            </li>
-        </div>
-        <div data-wow-delay="500ms">
-            <li>
-            <h4> Принцип: Швидко.Недорого.Якісно</h4>
-            <p>Виберіть 2 пункти</p>
-            </li>
-            
-        </div>
-    </ol>
-    </div>
+    <section id="direction" class="container">
+        <section class="header-text">
+        <img  class="img-position" src="./images/empty.png"  alt="Приклад макету">
+            <h4 > Від простого до арт макету</h4>
+            <img class="img-position"  src="./images/meat.jpg"  alt="Приклад макету">
 </section>
-<table border="1" background="https://cdnb.artstation.com/p/assets/images/images/036/076/173/4k/philipp-a-urlich-lake2b.jpg?1616667111" width="500" >
-    <tr>
-        <th>Тестова таблиця</th>
-        <th>1</th>
-        <th>2</th>
-        <th>3</th>
-    </tr>
-    <tr>
-        <th>1</th>
-        <td>1/1</td>
-        <td>1/2</td>
-        <td>1/3</td>
-    </tr>
-    <tr>
-        <th>2</th>
-        <td>2/1</td>
-        <td>2/2</td>
-        <td>2/3</td>
-    </tr>
-    <tr>
-        <th>3</th>
-        <td>3/1</td>
-        <td>3/2</td>
-        <td>3/3</td>
-    </tr>
-</table>
-
+    </section>
+<section id="example" class="container-m">
+    <section class="header-text">
+            <h3>Приклади наших макетів</h3>
+                    <img class="img1" src="./images/beach.png"  alt="Макет">  
+                    <img class="img2" src="./images/cocktails.png"  alt="Макет"> 
+                    <img class="img3" src="./images/future.jpg"  alt="Макет"> 
+                    <img class="img4" src="./images/shef.jpg"  alt="Макет"> 
+                    <img class="img5" src="./images/golant.png"  alt="Макет">
+            </section>
+        </section>
+        <section id="contacts" class="header-text container-b" >
+            <button class="button-s">Перейти</button>
+        </section>
+        <footer class="container-f">
+                    <p class="text-footer">
+                       Україна, Харків <br>
+                       095 ХХХ ХХ ХХ  - outline@gmail.com
+                    </p>  
+               <p class="text-p">
+                   Copyright 2021 - All Rights Reserved 
+                </p>
+        </footer>
 </body>
 </html>
