@@ -2,13 +2,23 @@
  {
     font-family:  'Times New Roman', serif;/*Шрифт*/
  }
- 
- h5, h6
+ h1
 {
-    font-size: 150%;/*Розмір*/
-    color: black ;/*Колір*/
-    margin: 0;/*Відступ(поля)*/
-    /*Обрамлення не потрібне*/
+    font-size: 400%;/*Розмір*/
+    color: rgb(228, 198, 178);/*Колір текста в тегах*/
+    margin: 30px;
+}
+h2
+{
+    font-size: 200%;/*Розмір*/
+    color:white;/*Колір текста в тегах*/
+}
+
+h3
+{
+    font-size: 400%;/*Розмір*/
+    color:white;/*Колір текста в тегах*/
+    margin: 10px;
 }
 h4
 {
@@ -16,7 +26,13 @@ h4
     color: rgb(2, 37, 7) ;/*Колір*/
     margin: 15px;/*Відступ(поля)*/
 }
-
+h5, h6
+{
+    font-size: 150%;/*Розмір*/
+    color: black ;/*Колір*/
+    margin: 0;/*Відступ(поля)*/
+    /*Обрамлення не потрібне*/
+}
 header .container-fluid
 {
     background-image: url('./images/city.jpg');/*Картинка (колір) фону*/
@@ -24,11 +40,18 @@ header .container-fluid
     height: 100vh;/*Висота елемента*/
     width: auto;/*Ширина елемента*/
     padding: 36px;/*Поля елемента*/
+    overflow: auto;/*2*/
 }
 .logo{
     width: auto;
     margin: auto;
     margin-left: 3%; 
+    overflow: visible;/*1*/
+}
+.img-logo
+{
+    width : 100%;
+    height : 100%;
 }
 .menu{
     width: auto;
@@ -36,28 +59,11 @@ header .container-fluid
     right:100pt;
 }
 
-.header-text
+.position
 {
-text-align: center;
+text-align: center;/*Вирівнювання*/
 }
-
- h2
-{
-    font-size: 200%;/*Розмір*/
-    color:white;/*Колір текста в тегах*/
-}
-h1
-{
-    font-size: 400%;/*Розмір*/
-    color: rgb(228, 198, 178);/*Колір текста в тегах*/
-    margin: 30px;
-}
-h3
-{
-    font-size: 400%;/*Розмір*/
-    color:white;/*Колір текста в тегах*/
-    margin: 10px;
-}
+ 
 .headlines{
     display: flex;
     width: 100%;
@@ -74,6 +80,7 @@ a{
 .container{
     height: auto; 
     background-color: rgb(243, 239, 243);
+    overflow: hidden;/*3*/
 }
 
 .container-m{
@@ -82,6 +89,7 @@ a{
     background-size: cover;
     background-position: 50% 0px;/*Позиція фону*/
     padding: 36px;/*Поля елемента*/
+   overflow: scroll;/*4*/
 }
 .img-position
 {
@@ -89,7 +97,6 @@ a{
     width : 40%;
     height : 40%;
 }
-
 
 .img1, .img2,  .img4
 {
@@ -112,6 +119,7 @@ a{
     height: auto; 
     padding:50px;/*Поля елемента*/
     background-color: rgb(238, 238, 238);
+    overflow: auto;/*5*/
 }
 .button-s
 {   font-family:  'Times New Roman';/*Шрифт*/
@@ -136,4 +144,7 @@ a{
 {
     text-align: center;
     margin-top: 9%;
+}
+img:hover{
+    transform: scale(1.2);/*Збільшення*/
 }
