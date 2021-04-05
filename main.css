@@ -148,3 +148,9 @@ a{
 img:hover{
     transform: scale(1.2);/*Збільшення*/
 }
+.top{
+    right: 40px; 
+    bottom: 20px;
+    color: gray;
+    position: fixed; 
+}
