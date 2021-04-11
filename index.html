@@ -48,6 +48,29 @@
         <section id="contacts" class="position container-b" >
             <a href="404.html"><button class="button-s">Перейти</button></a>
         </section>
+
+        <form>
+            <input type="text" id='fname' name="fname" pattern="^[А-Яа-яЁё]+$"> Ім'я<br>
+            <input type="text" id='lname' name="lname" pattern="^[А-Яа-яЁё]+$"> Прізвище<br>
+            <input type="text" name="address" > Адреса<br>
+            <input type="text" name="city" > Місто<br>
+            <input type="text" name="country" > Країна<br>
+            <input type="text" id='index' name="index"  maxlength="5" pattern="[0-9]{5}"> Поштовий індекс<br>
+            <input type="text" id='email' name="email" value="123" > Адреса електронної пошти<br>
+            <input type="submit" value="Відправити" > <br>
+        </form> 
+
+        <script>
+            for(let char of email.value) 
+            {
+                if(char != '@') 
+               alert(" Введіть @ символ в емейлі");
+            }
+           
+           
+            if(index.length >= 6) 
+            console.log(" Індекс має мітити 5 цифер");
+        </script>
         <footer class="container-f">
                     <p class="text-footer">
                        Україна, Харків <br>
