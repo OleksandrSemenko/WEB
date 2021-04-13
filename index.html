@@ -50,26 +50,54 @@
         </section>
 
         <form>
-            <input type="text" id='fname' name="fname" pattern="^[А-Яа-яЁё]+$"> Ім'я<br>
-            <input type="text" id='lname' name="lname" pattern="^[А-Яа-яЁё]+$"> Прізвище<br>
+            <input type="text" id='fname' name="fname" > Ім'я<br>
+            <input type="text" id='lname' name="lname" > Прізвище<br>
             <input type="text" name="address" > Адреса<br>
             <input type="text" name="city" > Місто<br>
             <input type="text" name="country" > Країна<br>
-            <input type="text" id='index' name="index"  maxlength="5" pattern="[0-9]{5}"> Поштовий індекс<br>
-            <input type="text" id='email' name="email" value="123" > Адреса електронної пошти<br>
-            <input type="submit" value="Відправити" > <br>
+            <input type="text" id='nindex' name="nindex"> Поштовий індекс<br>
+            <input type="text" id='email' name="email" > Адреса електронної пошти<br>
+            <input type="submit" onclick="eCheck()" value="Відправити" > <br>
+            
+            <input type="text" id='rtext' name="rtext" > Введіть текст для перевірки<br>
+            <input type="submit" onclick="check()" value="Перевірити" > <br>
         </form> 
 
         <script>
-            for(let char of email.value) 
+            function  eCheck(){
+            var reg = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/; 
+            var nreg = /^[А-Яа-яЁёЇїІіЄє'\-]+$/
+            var address = email.value;
+            var tfname = fname.value;
+            var tlname = lname.value;
+            var nid = nindex.value;
+            var number = nid.toString().length;
+            if(nreg.test(tfname) == false) 
             {
-                if(char != '@') 
-               alert(" Введіть @ символ в емейлі");
+            alert('Введіть корректне імя');
+            return false;
             }
-           
-           
-            if(index.length >= 6) 
-            console.log(" Індекс має мітити 5 цифер");
+            if(nreg.test(tlname) == false) 
+            {
+            alert('Введіть корректне прізвище');
+            return false;
+            }
+            if(number != 5) 
+            {
+            alert('Введіть корректний індекс');
+            }
+            if(reg.test(address) == false) 
+            {
+            alert('Введіть корректний e-mail');
+            return false;
+            }
+            }
+
+            function check() 
+            {
+            var str = rtext.value.split("").reverse().join("");
+            alert(str)
+            }
         </script>
         <footer class="container-f">
                     <p class="text-footer">
